@@ -37,41 +37,41 @@ const Converter = () => {
   </div>
 </nav>
 
-      <div classNameName='container mt-4'>
+      <div className='container mt-4'>
         <h2>Converter Numeric Value</h2>
-        <div classNameName="form-floating mb-3">
+        <div className="form-floating mb-3">
           <input 
             type="number" 
             style={myStyle} 
             value={value}
             onChange={(e) => setValue(e.target.value)} 
-            classNameName="form-control"
+            className="form-control"
             placeholder="Enter value in meters"
           />
         </div>
 
         <button 
           type="button" 
-          classNameName="btn btn-primary me-2" 
+          className="btn btn-primary me-2" 
           onClick={() => setResult(`${value} meters = ${value * 1000} millimeters`)}>
           Convert to Millimeter
         </button>
 
         <button 
           type="button" 
-          classNameName="btn btn-primary me-2" 
+          className="btn btn-primary me-2" 
           onClick={() => setResult(`${value} meters = ${value * 100} centimeters`)}>
           Convert to Centimeter
         </button>
 
         <button 
           type="button" 
-          classNameName="btn btn-primary" 
+          className="btn btn-primary" 
           onClick={() => setResult(`${value} meters`)}>
           Convert to Meter
         </button>
 
-        {result && <div classNameName="mt-3 alert alert-success">{result}</div>}
+        {result && <div className="mt-3 alert alert-success">{result}</div>}
       </div>
     </div>
   );
