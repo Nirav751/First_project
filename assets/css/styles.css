@@ -220,10 +220,11 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 100%;
+  width: 100%; /* optional if controlling size in SVG */
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* can be removed if using preserveAspectRatio */
 }
+
 
 
 /*BUTTONS*/
